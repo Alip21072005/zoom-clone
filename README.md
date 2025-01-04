@@ -54,6 +54,6 @@ SEE masih memiliki beberapa fitur yang belum tersedia, namun sebenarnya masih da
 ## <a name="quick-start">🤸 Quick Start</a>
 
 Web ini sudah di Hosting dengan bantuan vercel.
-<a href="https://zoom-clone-gules-six.vercel.app/" target="_blank">
+<a href="https://zoom-clone-gules-six.vercel.app" target="_blank">
 
 # see
