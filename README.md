@@ -53,7 +53,6 @@ SEE masih memiliki beberapa fitur yang belum tersedia, namun sebenarnya masih da
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
-Web ini sudah di Hosting dengan bantuan 
+Web ini sudah di Hosting dengan bantuan vercel.
 
-# see
 # see
