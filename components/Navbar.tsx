@@ -16,12 +16,12 @@ const Navbar = () => {
           className="max-sm:size-10"
         />
         <p className="text-[26px] font-extrabold text-white max-sm:hidden">
-          YOOM
+          SEE
         </p>
       </Link>
       <div className="flex-between gap-5">
         <SignedIn>
-          <UserButton afterSignOutUrl="/sign-in" />
+          <UserButton />
         </SignedIn>
 
         <MobileNav />

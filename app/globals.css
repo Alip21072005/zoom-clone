@@ -1,14 +1,16 @@
+/* ===== Tailwind CSS Base Configuration ===== */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ===== Global Resets ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ======== stream css overrides ======== */
+/* ===== Stream CSS Overrides ===== */
 .str-video__call-stats {
   max-width: 500px;
   position: relative;
@@ -18,14 +20,8 @@
   max-height: 700px;
 }
 
-.str-video__participant-details {
-  color: white;
-}
-
-.str-video__menu-container {
-  color: white;
-}
-
+.str-video__participant-details,
+.str-video__menu-container,
 .str-video__notification {
   color: white;
 }
@@ -42,26 +38,32 @@
   height: 40px;
 }
 
+/* ===== Glassmorphism Styles ===== */
 .glassmorphism {
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
 }
+
 .glassmorphism2 {
   background: rgba(18, 17, 17, 0.25);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
 }
 
-/* ==== clerk class override ===== */
-
-.cl-userButtonPopoverActionButtonIcon {
+/* ===== Clerk Class Overrides ===== */
+.cl-userButtonPopoverActionButtonIcon,
+.cl-internal-wkkub3,
+.cl-userButtonPopoverActionButton {
   color: white;
 }
 
 .cl-logoBox {
   height: 40px;
 }
+
 .cl-dividerLine {
   background: #252a41;
   height: 2px;
@@ -69,17 +71,10 @@
 
 .cl-socialButtonsIconButton {
   border: 3px solid #565761;
+  border-radius: 50%;
 }
 
-.cl-internal-wkkub3 {
-  color: white;
-}
-.cl-userButtonPopoverActionButton {
-  color: white;
-}
-
-/* =============================== */
-
+/* ===== Tailwind Utilities ===== */
 @layer utilities {
   .flex-center {
     @apply flex justify-center items-center;
@@ -90,8 +85,7 @@
   }
 }
 
-/* animation */
-
+/* ===== Animations ===== */
 .show-block {
   width: 100%;
   max-width: 350px;
@@ -110,3 +104,6 @@
     width: 100%;
   }
 }
+
+/* ===== Additional Improvements ===== */
+/* Added border-radius and consistent spacing for better visuals */
