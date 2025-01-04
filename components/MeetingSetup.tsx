@@ -10,7 +10,7 @@ import {
 import Alert from './Alert';
 import { Button } from './ui/button';
 
-const MeetingSetup = ({
+const PengaturanPertemuan = ({
   setIsSetupComplete,
 }: {
   setIsSetupComplete: (value: boolean) => void;
@@ -27,7 +27,7 @@ const MeetingSetup = ({
 
   if (!call) {
     throw new Error(
-      'useStreamCall must be used within a StreamCall component.',
+      'useStreamCall harus digunakan dalam komponen StreamCall.',
     );
   }
 
@@ -47,21 +47,21 @@ const MeetingSetup = ({
   if (callTimeNotArrived)
     return (
       <Alert
-        title={`Your Meeting has not started yet. It is scheduled for ${callStartsAt.toLocaleString()}`}
+        title={`Pertemuan Anda belum dimulai. Dijadwalkan pada ${callStartsAt.toLocaleString()}`}
       />
     );
 
   if (callHasEnded)
     return (
       <Alert
-        title="The call has been ended by the host"
+        title="Pertemuan telah diakhiri oleh penyelenggara"
         iconUrl="/icons/call-ended.svg"
       />
     );
 
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center gap-3 text-white">
-      <h1 className="text-center text-2xl font-bold">Setup</h1>
+      <h1 className="text-center text-2xl font-bold">Pengaturan</h1>
       <VideoPreview />
       <div className="flex h-16 items-center justify-center gap-3">
         <label className="flex items-center justify-center gap-2 font-medium">
@@ -70,7 +70,7 @@ const MeetingSetup = ({
             checked={isMicCamToggled}
             onChange={(e) => setIsMicCamToggled(e.target.checked)}
           />
-          Join with mic and camera off
+          Bergabung dengan mic dan kamera mati
         </label>
         <DeviceSettings />
       </div>
@@ -82,10 +82,10 @@ const MeetingSetup = ({
           setIsSetupComplete(true);
         }}
       >
-        Join meeting
+        Bergabung dengan pertemuan
       </Button>
     </div>
   );
 };
 
-export default MeetingSetup;
+export default PengaturanPertemuan;
