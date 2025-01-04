@@ -27,7 +27,7 @@
 }
 
 .str-video__participant-list {
-  background-color: #1c1f2e;
+  background-color: #1c1f2e; /* Dark background for participants */
   padding: 10px;
   border-radius: 10px;
   color: white;
@@ -36,6 +36,9 @@
 
 .str-video__call-controls__button {
   height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for better UI */
+  border-radius: 50%;
 }
 
 /* ===== Glassmorphism Styles ===== */
@@ -65,7 +68,7 @@
 }
 
 .cl-dividerLine {
-  background: #252a41;
+  background: #252a41; /* Dark line for separation */
   height: 2px;
 }
 
@@ -82,6 +85,11 @@
 
   .flex-between {
     @apply flex justify-between items-center;
+  }
+
+  /* Custom Utility for full-width, full-height container */
+  .full-container {
+    @apply w-full h-full;
   }
 }
 
@@ -106,4 +114,16 @@
 }
 
 /* ===== Additional Improvements ===== */
-/* Added border-radius and consistent spacing for better visuals */
+/* Border radius adjustments for buttons and containers for consistent design */
+button, .str-video__call-controls__button {
+  border-radius: 8px;
+}
+
+.str-video__participant-list {
+  border-radius: 12px; /* More rounded corners for the participant list */
+}
+
+/* Spacing improvements for better readability */
+.str-video__participant-list {
+  margin-top: 10px;
+}

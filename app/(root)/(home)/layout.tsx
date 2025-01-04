@@ -6,7 +6,7 @@ import Sidebar from '@/components/Sidebar';
 
 export const metadata: Metadata = {
   title: 'SEE',
-  description: 'Jangkau lebih banyak orang dengan SEE',
+  description: 'Jangkau lebih banyak orang dengan SEE untuk pertemuan online yang lebih mudah.',
 };
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {

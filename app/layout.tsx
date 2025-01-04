@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "SEE",
-  description: "Video calling App",
+  description: "Aplikasi Panggilan Video",
   icons: {
     icon: "/icons/logo.svg",
   },
@@ -22,7 +22,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="id"> {/* Mengubah bahasa default menjadi Bahasa Indonesia */}
       <ClerkProvider
         appearance={{
           layout: {
